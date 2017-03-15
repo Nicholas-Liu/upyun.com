@@ -1,0 +1,15 @@
+image: repo.upyun.com:5043/ci-shared-runner
+
+stages:
+    - build
+
+build-online:
+    stage: build
+    script:
+        - img=repo.upyun.com:5043/upyun.com:$CI_BUILD_TAG
+        - for i in {1..3}; do (docker build -t $img .) && break; done
+        - docker push $img
+    tags:
+        - on-line-docker-builder
+    only:
+        - tags@upyun/2017.upyun.com
