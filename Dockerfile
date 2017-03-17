@@ -7,7 +7,6 @@ ADD yarn.lock /src/yarn.lock
 RUN TMPDIR=/tmp yarn install
 ADD . /src
 RUN yarn build
-RUN yarn prerender
 
 EXPOSE 8000
 CMD node server.js
