@@ -1,0 +1,21 @@
+# 该文件只需在第一次部署时需要
+# required
+group: dev-app
+name: upyun-com
+image: repo.upyun.com:5043/upyun.com:0.0.4
+
+# optional
+instances: 2
+cpu: 0.1
+memory: 512
+network: bridge
+privileged: false
+
+#command: /bin/bash
+ports:
+    - 8000
+
+zones:
+    - dev
+services:
+    - 2017.upyun.com:8000

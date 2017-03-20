@@ -9,4 +9,4 @@ ADD . /src
 RUN yarn build
 
 EXPOSE 8000
-CMD node server.js
+CMD NODE_ENV=production ./node_modules/bin/pm2 start server.js -i 2 --no-daemon
