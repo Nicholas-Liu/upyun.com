@@ -11,7 +11,8 @@ app.use(function (req, res, next) {
   const parsed = urllib.parse(req.url)
   const pathname = parsed.pathname
   if (pathname === '/index' || pathname === '/index.html') {
-    res.redirect('/')
+    // 重定向首页至 /，保留 querystring
+    res.redirect('/' + req.url.substring(pathname.length))
   } else if (req.url.match(/.*?union\.html/)) {
     res.redirect('/league')
   } else if (req.url.match(/.*?\.html/)) {
