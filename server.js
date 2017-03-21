@@ -7,7 +7,9 @@ const app = express()
 app.use(helmet())
 app.use(useragent.express())
 app.use(function (req, res, next) {
-  if (req.url.match(/.*?union\.html$/)) {
+  if (req.url === '/index' || req.url === '/index.html') {
+    res.redirect('/')
+  } else if (req.url.match(/.*?union\.html$/)) {
     res.redirect('/league')
   } else if (req.url.match(/.*?\.html$/)) {
     res.redirect(req.url.replace('.html', ''))
