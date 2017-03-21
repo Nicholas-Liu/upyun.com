@@ -2,16 +2,19 @@ const express = require('express')
 const helmet = require('helmet')
 const history = require('connect-history-api-fallback')
 const useragent = require('express-useragent')
+const urllib = require('url')
 const app = express()
 
 app.use(helmet())
 app.use(useragent.express())
 app.use(function (req, res, next) {
-  if (req.url === '/index' || req.url === '/index.html') {
+  const parsed = urllib.parse(req.url)
+  const pathname = parsed.pathname
+  if (pathname === '/index' || pathname === '/index.html') {
     res.redirect('/')
-  } else if (req.url.match(/.*?union\.html$/)) {
+  } else if (req.url.match(/.*?union\.html/)) {
     res.redirect('/league')
-  } else if (req.url.match(/.*?\.html$/)) {
+  } else if (req.url.match(/.*?\.html/)) {
     res.redirect(req.url.replace('.html', ''))
   } else {
     return next()
