@@ -13,6 +13,8 @@ app.use(function (req, res, next) {
   if (pathname === '/index' || pathname === '/index.html') {
     // 重定向首页至 /，保留 querystring
     res.redirect('/' + req.url.substring(pathname.length))
+  } else if (req.url.match(/assets\/league\/\d+X\d+.png/)) {
+    res.redirect(req.url.replace('assets/league/', 'static/'))
   } else if (req.url.match(/.*?union\.html/)) {
     res.redirect('/league')
   } else if (req.url.match(/.*?\.html/)) {
