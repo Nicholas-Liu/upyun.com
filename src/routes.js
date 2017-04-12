@@ -1,10 +1,12 @@
 import home from './pages/home/index'
+import NotFound from './pages/home/NotFound'
 import productUss from './pages/products/file-storage'
 import productCdn from './pages/products/cdn'
 import productUps from './pages/products/process'
 import productMarketing from './pages/products/marketing'
 import productVod from './pages/products/vod'
 import productLive from './pages/products/live'
+import productCertificate from './pages/products/certificate'
 import solutionAv from './pages/solutions/media'
 import solutionMobile from './pages/solutions/mobile'
 import solutionECommerce from './pages/solutions/ecommerce'
@@ -26,7 +28,6 @@ const chunyu_tos = resolve => require(['./pages/others/chunyu_tos.vue'], resolve
 const https = resolve => require(['./pages/others/https.vue'], resolve)
 const reports = resolve => require(['./pages/about/reports.vue'], resolve)
 const brandnew = resolve => require(['./pages/others/brandnew.vue'], resolve)
-const promotion = resolve => require(['./pages/others/promotion.vue'], resolve)
 
 export default [
   { path: '/', component: home },
@@ -36,6 +37,7 @@ export default [
   { path: '/products/marketing', component: productMarketing },
   { path: '/products/vod', component: productVod },
   { path: '/products/live', component: productLive },
+  { path: '/products/certificate', component: productCertificate },
   { path: '/solutions/media', component: solutionAv },
   { path: '/solutions/mobile', component: solutionMobile },
   { path: '/solutions/ecommerce', component: solutionECommerce },
@@ -57,5 +59,5 @@ export default [
   { path: '/media_reports', component: reports },
   { path: '/https', component: https },
   { path: '/brandnew', component: brandnew },
-  { path: '/promotion', component: promotion }
+  { path: '*', component: NotFound }
 ]

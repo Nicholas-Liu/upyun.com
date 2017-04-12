@@ -17,12 +17,12 @@
       //-     up_button(type="major", :color="colorSet.mid", :url="$links.console", target="_blank") 免费体验
       //-     up_button(url="http://docs.upyun.com/cdn/guide/" target="_blank") 快速入门
       .slide
-        .title 又拍云品牌全新升级
-        .sub-title 从产品到服务，从连接到守护、从国内到海外
-        div(style="font-size: 26px; margin-top: 15px") 全面加速在线业务
+        .title OV & EV SSL 证书上线
+        .sub-title 申购便捷，一键部署，快速实现全站 HTTPS
+        div(style="font-size: 26px; margin-top: 15px") 限时优惠，低至 75 折
         .buttons
-          router-link(to="/brandnew", class="up_button major", style="color:#2ec0ec") 品牌故事
-          router-link(to="/promotion", class="up_button outline") 升级大促
+          a(href="https://console.upyun.com/toolbox/createCertificate/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即申购
+          router-link(to="/products/certificate", class="up_button outline") 查看详情
       //- .dots
         .dot.active
         .dot
@@ -91,9 +91,9 @@
               .title 贝贝
               .description 贝贝是国内领先的母婴特卖平台，有超过 7000 万的妈妈群体通过贝贝购买各种母婴物品。又拍云集CDN、云存储、云处理和云安全于一体的场景化解决方案，很好的帮贝贝分摊了基础建设的压力，并同时提升了整站的妈妈 购物体验。活动大促期间，又拍云更点对点的安排技术团队入驻，帮助应对大促带来的各种访问压力。
             .item
-              img(src="./assets/client-mogujie.png", width="74", height="74")
-              .title 蘑菇街
-              .description 蘑菇街是目前国内最大的女性时尚购物网站,每天超过 550 万的 UV，全站积累了大量的优质女性商品图片。又拍云的自建 CDN 体系很好的帮助蘑菇街解决了打开速度的问题。双十一期间，又拍云帮助蘑菇街稳定地扛住了超大流量涌入，以可靠的技术支持为数百万笔订单提供了安全支付保障。
+              img(src="./assets/client-meili.png", width="74", height="74")
+              .title 美丽联合集团
+              .description 美丽联合集团是中国最大的女性媒体与时尚消费集团，拥有超过2亿的注册用户，日均活跃用户数量超过1500万。又拍云作为美丽联合集团企业级的云服务商，自建 CDN 体系很好的帮助解决了美联旗下产品打开速度的问题。特别是双十一大促期间，又拍云帮助美联稳定地扛住了超大流量涌入，以可靠的技术支持为数百万笔订单提供了安全支付保障。
             .item
               img(src="./assets/client-qingtingfm.png", width="74", height="74")
               .title 蜻蜓 fm
@@ -108,8 +108,8 @@
         .lines
         .container
           .inner
-            .main-title 现在就开始吧，认证后还送代金券！
-            .sub-title 追求理想的加速效果，性能更快，更安全
+            .main-title 新用户注册并激活，即送 61 元代金券
+            .sub-title 只需一步，即刻享受又拍云全网加速与强大的云端多媒体处理服务
             up_button(type="major", :color="colorSet.mid", :url="$links.console", target="_blank") 免费注册
 </template>
 
