@@ -10,7 +10,9 @@ app.use(useragent.express())
 app.use(function (req, res, next) {
   const parsed = urllib.parse(req.url)
   const pathname = parsed.pathname
-  if (pathname === '/index' || pathname === '/index.html') {
+  if (pathname === '/googlec2479f8e37b3acfb.html') {
+    return next()
+  } else if (pathname === '/index' || pathname === '/index.html') {
     // 重定向首页至 /，保留 querystring
     res.redirect('/' + req.url.substring(pathname.length))
   } else if (req.url.match(/assets\/league\/\d+X\d+.png/)) {
