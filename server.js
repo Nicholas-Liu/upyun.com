@@ -34,7 +34,14 @@ const spider = express.static('./prerender', {
   maxage: 7 * 86400 * 1000
 })
 
-app.use(history())
+app.use(function (req, res, next) {
+  if (req.useragent.isBot) {
+    // 爬虫不使用 history 中间件
+    return next()
+  } else {
+    history()(req, res, next)
+  }
+})
 
 app.use(function (req, res, next) {
   if (req.useragent.isBot) {
