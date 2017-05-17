@@ -44,7 +44,18 @@ app.use(function (req, res, next) {
 })
 
 app.use(function (req, res, next) {
-  if (req.useragent.isBot) {
+  // 来自搜索引擎的缓存页
+  function isPageCache () {
+    const referer = req.header('referer') || ''
+    const spiders = ['cache.baiducontent.com', 'googleusercontent.com', 'bingj.com']
+    for (let index = 0; index < spiders.length; index++) {
+      if (referer.indexOf(spiders[index]) !== -1) {
+        return true
+      }
+    }
+    return false
+  }
+  if (req.useragent.isBot || isPageCache()) {
     spider(req, res, next)
   } else {
     human(req, res, next)
