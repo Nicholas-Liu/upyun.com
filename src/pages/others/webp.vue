@@ -130,7 +130,7 @@ export default {
   },
   head: {
     title: {
-      inner: 'WebP - 图片格式的发展趋势',
+      inner: 'WebP - 图片格式的发展趋势'
     },
     meta: [
       { name: 'keywords', content: 'WebP，动态 WebP，图片瘦身，图片格式转换', id: 'kw' },
