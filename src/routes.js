@@ -25,8 +25,8 @@ import pricing from './pages/about/pricing'
 import price_instruction from './pages/about/price_instruction'
 import webp from './pages/others/webp.vue'
 import league from './pages/others/league.vue'
-import chunyu from './pages/others/chunyu.vue'
-import chunyu_tos from './pages/others/chunyu_tos.vue'
+// import chunyu from './pages/others/chunyu.vue'
+// import chunyu_tos from './pages/others/chunyu_tos.vue'
 import https from './pages/others/https.vue'
 import reports from './pages/about/reports.vue'
 import brandnew from './pages/others/brandnew.vue'
@@ -58,8 +58,8 @@ export default [
   { path: '/price_instruction', component: price_instruction },
   { path: '/webp', component: webp },
   { path: '/league', component: league },
-  { path: '/chunyu', component: chunyu },
-  { path: '/chunyu_tos', component: chunyu_tos },
+  { path: '/chunyu', redirect: '/league' },
+  { path: '/chunyu_tos', redirect: '/league' },
   { path: '/media_reports', component: reports },
   { path: '/https', component: https },
   { path: '/brandnew', component: brandnew },

@@ -83,9 +83,9 @@ layout(:colors="colorSet")
         up_button(:color="colorSet.end", type="major", :url="$links.console", target="_blank") 免费试用
         up_button(url="#section-pricing") 查看价格
       .price 加入又拍云联盟，一年内每月可免费使用 10GB 存储空间及 15GB 流量。
-        br
-        | 加入春雨计划，提供免费一年云服务。
-        router-link(to="/chunyu") 了解详情
+        //- br
+        //- | 加入春雨计划，提供免费一年云服务。
+        //- router-link(to="/chunyu") 了解详情
     .icon
       icon
   template(slot="page")
