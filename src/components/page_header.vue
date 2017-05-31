@@ -96,7 +96,6 @@
         .list(v-show="menuCondition.contentNumber === 3")
           .row
             .title 创业扶持
-            router-link.link(to="/chunyu") 春雨计划
             router-link.link(to="/league") 又拍云联盟
           .row
             .title 线下活动
