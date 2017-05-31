@@ -22,7 +22,7 @@ var sitemap = sm.createSitemap({
         { url: '/solutions/mobile', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/solutions/mobile/index.html' },
         { url: '/pricing', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/pricing/index.html' },
         { url: '/price_instruction', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/price_instruction/index.html' },
-        { url: '/chunyu', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/chunyu/index.html' },
+        // { url: '/chunyu', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/chunyu/index.html' },
         { url: '/league', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/league/index.html' },
         { url: '/https', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/https/index.html' },
         { url: '/webp', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/webp/index.html' },
