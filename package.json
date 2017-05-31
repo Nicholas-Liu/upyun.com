@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "@upyun/vue-router": "^2.5.4",
     "animateplus": "^1.4.0",
     "bowser": "^1.6.1",
     "connect-history-api-fallback": "^1.3.0",

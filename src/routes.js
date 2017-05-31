@@ -23,13 +23,13 @@ import partners from './pages/about/partners'
 import joinUs from './pages/about/join_us'
 import pricing from './pages/about/pricing'
 import price_instruction from './pages/about/price_instruction'
-const webp = resolve => require(['./pages/others/webp.vue'], resolve)
-const league = resolve => require(['./pages/others/league.vue'], resolve)
-const chunyu = resolve => require(['./pages/others/chunyu.vue'], resolve)
-const chunyu_tos = resolve => require(['./pages/others/chunyu_tos.vue'], resolve)
-const https = resolve => require(['./pages/others/https.vue'], resolve)
-const reports = resolve => require(['./pages/about/reports.vue'], resolve)
-const brandnew = resolve => require(['./pages/others/brandnew.vue'], resolve)
+import webp from './pages/others/webp.vue'
+import league from './pages/others/league.vue'
+import chunyu from './pages/others/chunyu.vue'
+import chunyu_tos from './pages/others/chunyu_tos.vue'
+import https from './pages/others/https.vue'
+import reports from './pages/about/reports.vue'
+import brandnew from './pages/others/brandnew.vue'
 
 export default [
   { path: '/', component: home },
