@@ -21,7 +21,6 @@
       .menu
         .title 活动
         //- a 创业扶持
-        router-link(to="/chunyu") 春雨计划
         router-link(to="/league") 又拍云联盟
         //- a 线下活动
         a(href="https://opentalk.upyun.com/show/index" target="_blank") OpenTalk
