@@ -45,11 +45,13 @@ export default {
   },
   head: {
     title: {
-      inner: '又拍云 - 加速在线业务'
+      inner: '又拍云 - 加速在线业务',
+      separator: ' ',
+      complement: ' '
     },
     meta: [
-      { name: 'keywords', content: 'CDN,云加速,视频加速,音频加速,全站加速,文件加速,智能CDN,云服务,CDN加速,音视频处理,云存储', id: 'kw' },
-      { name: 'description', content: '又拍云 是国内领先的CDN服务提供商，国家工信部认证通过的“可信云”，乌云众测平台认证的“安全云”，为移动时代的创业者提供新一代的CDN加速服务。', id: 'desc' }
+      { name: 'keywords', content: 'CDN,云分发,CDN加速,直播云,点播云,云存储,SSL证书服务,云处理,云服务', id: 'kw' },
+      { name: 'description', content: '国内领先的云服务商，全球拥有超200个自建CDN节点，为近20万用户提供CDN、直播云、点播云、云存储、云处理等一站式加速方案。', id: 'desc' }
     ]
   },
   components: { page_header, page_footer }

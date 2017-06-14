@@ -64,13 +64,13 @@
               .point(v-for="p in points", :style="{left: `${p.left}px`, top: `${p.top}px`, transform: `scale(${p.zoom})`, opacity: p.opacity}")
           .right
             .title 自建高质量全球加速节点
-            .description 截至 2017 年 3 月，又拍云全球 CDN 节点数达到 160 多个，覆盖 10 多个 国家和地区，10 多个运营商，带宽总量超过 2Tbps。2015 年底，CDN 节点资源已覆盖新加坡、台湾、香港、美国、德国等海外地区，全面支持海外加速，推进全球化布局。
+            .description 截至 2017 年 6 月，又拍云全球 CDN 节点数达到 200 多个，覆盖 15 多个 国家和地区，10 多个运营商，带宽总量超过 3.5Tbps。2015 年底，CDN 节点资源已覆盖新加坡、台湾、香港、美国、德国等海外地区，全面支持海外加速，推进全球化布局。
             .numbers
               .item
                 .num 6
                 .text 数据中心
               .item
-                .num 160+
+                .num 200+
                 .text 全球自建 CDN 节点
               .item
                 .num 4000+
