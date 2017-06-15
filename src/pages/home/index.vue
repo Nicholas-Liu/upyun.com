@@ -5,29 +5,14 @@
   layout(:colors="colorSet")
     div(slot="hero")
       summit(animate)
-      //- .slide
-      //-   .title 为 Web 和移动应用
-      //-     br
-      //-     | 提供更快、更安全的全网加速
-      //-   .sub-title
-      //-     | 为网站和移动应用提供内容分发，支持 HTTP、HTTPS、RTMP、HLS、HTTP＋FLV 多种协议
-      //-     br
-      //-     | 支持自助化配置，提供 7 × 24 小时技术支持
-      //-   .buttons
-      //-     up_button(type="major", :color="colorSet.mid", :url="$links.console", target="_blank") 免费体验
-      //-     up_button(url="http://docs.upyun.com/cdn/guide/" target="_blank") 快速入门
       .slide
-        .title OV & EV SSL 证书上线
-        .sub-title 申购便捷，一键部署，快速实现全站 HTTPS
-        div(style="font-size: 26px; margin-top: 15px") 限时优惠，低至 75 折
+        .title 疯狂一夏，充值立返
+        .sub-title 又拍云助燃 6.18
+        div(style="font-size: 26px; margin-top: 15px") 6.16-6.30，限时优惠，最高返 16%
         .buttons
-          a(href="https://console.upyun.com/toolbox/createCertificate/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即申购
-          router-link(to="/products/ssl", class="up_button outline") 查看详情
-      //- .dots
-        .dot.active
-        .dot
-        .dot
-        .dot
+          a(href="https://console.upyun.com/billing/charge/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即充值
+          router-link(to="/618", class="up_button outline") 查看详情
+
     div(slot="page")
       .section-main
         .container
