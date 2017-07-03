@@ -30,7 +30,6 @@ import league from './pages/others/league.vue'
 import https from './pages/others/https.vue'
 import reports from './pages/about/reports.vue'
 import brandnew from './pages/others/brandnew.vue'
-import event618 from './pages/others/618.vue'
 
 export default [
   { path: '/', component: home },
@@ -64,6 +63,5 @@ export default [
   { path: '/media_reports', component: reports },
   { path: '/https', component: https },
   { path: '/brandnew', component: brandnew },
-  { path: '/618', component: event618 },
   { path: '*', component: NotFound }
 ]
