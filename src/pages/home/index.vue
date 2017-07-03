@@ -6,13 +6,12 @@
     div(slot="hero")
       summit(animate)
       .slide
-        .title 疯狂一夏，充值立返
-        .sub-title 又拍云助燃 6.18
-        div(style="font-size: 26px; margin-top: 15px") 6.16-6.30，限时优惠，最高返 16%
+        .title OV & EV SSL 证书上线
+        .sub-title 申购便捷，一键部署，快速实现全站 HTTPS
+        div(style="font-size: 26px; margin-top: 15px") 限时优惠，低至 75 折
         .buttons
-          a(href="https://console.upyun.com/billing/charge/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即充值
-          router-link(to="/618", class="up_button outline") 查看详情
-
+          a(href="https://console.upyun.com/toolbox/createCertificate/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即申购
+          router-link(to="/products/ssl", class="up_button outline") 查看详情
     div(slot="page")
       .section-main
         .container
