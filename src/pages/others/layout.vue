@@ -40,17 +40,6 @@
         top: -110px
         text-align: center
         +animate(fadeInUp, .5s, .5s)
-  &.event618
-    .hero
-      background: url(./assets/618/bg.png)
-      background-position: center
-      height: 567px
-      .cover
-        +animate(fadeInDown, .5s, .5s)
-        position: relative
-        top: -80px
-        height: 567px
-        background: url('./assets/618/banner.png') center no-repeat
 </style>
 
 <template lang="pug">
