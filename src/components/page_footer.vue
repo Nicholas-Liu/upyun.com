@@ -64,7 +64,12 @@
         .line 云分发服务
         .line No:08005
 
-  .icp © 2017 杭州又拍云科技有限公司 ｜  浙公网安备 33010602000847号
+  .icp
+    | © 2017 杭州又拍云科技有限公司
+    br 
+    a(href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=EKkwRqX01_YRWuwCeFyJ4dlOpS0FEKZxFPfL_LOsL7kTrA6NBk3J!1069245859", target="_blank") 浙B2-20110282-2
+    img(src="../assets/beian.png", width="20", height="20")
+    a(href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602000847", target="_blank") 浙公网安备 33010602000847号
 </template>
 
 <script>
