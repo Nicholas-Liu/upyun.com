@@ -76,7 +76,7 @@
             .description 加速网站访问，高峰期弹性扩展从容应对“大促”
             .icon.e-commerce
           router-link.item(to="/solutions/fusionstorage")
-            .title.darkBlue 融合云
+            .title.darkBlue 融合云存储
             .description 构建多源存储架构，数据可平滑迁移
             .icon.fusion
         .list(v-show="menuCondition.contentNumber === 2")

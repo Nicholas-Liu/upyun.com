@@ -5,3 +5,4 @@ prerender/
 fabfile.pyc
 npm-debug.log
 .node-version
+yarn-error.log
