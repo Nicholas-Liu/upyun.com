@@ -5,4 +5,5 @@ prerender/
 fabfile.pyc
 npm-debug.log
 .node-version
+.idea
 yarn-error.log

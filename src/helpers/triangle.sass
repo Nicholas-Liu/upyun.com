@@ -1,0 +1,73 @@
+=triangle($position, $triangle-width, $border-width, $direction, $border-color, $background-color)
+  @if length($triangle-width) > 2
+    @error "sorry, triangle-width length need <= 2"
+
+  @if type-of($triangle-width) == "number"
+    $triangle-width: $triangle-width, $triangle-width
+
+  $center-width: nth($triangle-width, 1)
+  $beyond-width: nth($triangle-width, 2)
+
+  position: $position
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+
+  @if $direction == "top"
+    &:before
+      left: 0
+      top: 0
+      border-bottom: $center-width solid $border-color
+      border-left: $beyond-width solid transparent
+      border-right: $beyond-width solid transparent
+
+    &:after
+      left: $border-width
+      top: $border-width
+      border-bottom: ($center-width - $border-width) solid $background-color
+      border-left: ($beyond-width - $border-width) solid transparent
+      border-right: ($beyond-width - $border-width) solid transparent
+  @else if $direction == right
+    &:before
+      left: 0
+      top: 0
+      border-left: $center-width solid $border-color
+      border-bottom: $beyond-width solid transparent
+      border-top: $beyond-width solid transparent
+
+    &:after
+      left: 0
+      top: $border-width
+      border-left: ($center-width - $border-width) solid $background-color
+      border-top: ($beyond-width - $border-width) solid transparent
+      border-bottom: ($beyond-width - $border-width) solid transparent
+  @else if $direction == bottom
+    &:before
+      left: 0
+      top: 0
+      border-top: $center-width solid $border-color
+      border-left: $beyond-width solid transparent
+      border-right: $beyond-width solid transparent
+
+    &:after
+      left: $border-width
+      top: 0
+      border-top: ($center-width - $border-width) solid $background-color
+      border-left: ($beyond-width - $border-width) solid transparent
+      border-right: ($beyond-width - $border-width) solid transparent
+  @else if $direction == left
+    &:before
+      left: 0
+      top: 0
+      border-right: $center-width solid $border-color
+      border-bottom: $beyond-width solid transparent
+      border-top: $beyond-width solid transparent
+
+    &:after
+      left: $border-width
+      top: $border-width
+      border-right: ($center-width - $border-width) solid $background-color
+      border-bottom: ($beyond-width - $border-width) solid transparent
+      border-top: ($beyond-width - $border-width) solid transparent
