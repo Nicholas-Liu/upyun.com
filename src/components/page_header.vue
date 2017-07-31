@@ -121,8 +121,8 @@ export default {
       menuCondition: { left: -41, width: 455, height: 440, contentNumber: 0 },
       conditions: [
         { left: -41, width: 455, height: 440, contentNumber: 0 },
-        { left: 49, width: 455, height: 290, contentNumber: 1 },
-        { left: 273, width: 384, height: 164, contentNumber: 2 },
+        { left: 51, width: 455, height: 290, contentNumber: 1 },
+        { left: 277, width: 384, height: 164, contentNumber: 2 },
         { left: 395, width: 384, height: 136, contentNumber: 3 }
       ],
       timeout: {},
