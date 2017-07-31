@@ -1,15 +1,20 @@
 <style lang="sass" src="./page_header.sass"></style>
 <template lang="pug">
-#page_header
+#page_header(:class="{'page-fixed': fixedStyle}")
   .container.clearfix
     router-link.logo(to="/")
-      img(src="../assets/logo.svg")
+      img(v-if="!fixedStyle", src="../assets/logo.svg")
+      img(v-if="fixedStyle", src="../assets/logo-fixed.svg")
     .navs
       .nav(@mouseover="showMenu(0)", @mouseout="hideMenu") 产品
+        span.select-triangle
       .nav(@mouseover="showMenu(1)", @mouseout="hideMenu") 解决方案
+        span.select-triangle
       router-link.nav(to="/pricing") 价格
       .nav(@mouseover="showMenu(2)", @mouseout="hideMenu") 帮助与文档
+        span.select-triangle
       .nav(@mouseover="showMenu(3)", @mouseout="hideMenu") 最新活动
+        span.select-triangle
       router-link.nav(to="/brandNew") 品牌形象升级
     .side-navs
       a.nav(:href="$links.register" target="_blank") 注册
@@ -116,12 +121,27 @@ export default {
       menuCondition: { left: -41, width: 455, height: 440, contentNumber: 0 },
       conditions: [
         { left: -41, width: 455, height: 440, contentNumber: 0 },
-        { left: 49, width: 455, height: 290, contentNumber: 1 },
-        { left: 273, width: 384, height: 164, contentNumber: 2 },
+        { left: 51, width: 455, height: 290, contentNumber: 1 },
+        { left: 277, width: 384, height: 164, contentNumber: 2 },
         { left: 395, width: 384, height: 136, contentNumber: 3 }
       ],
-      timeout: {}
+      timeout: {},
+      fixedStyle: false
     }
+  },
+  mounted () {
+    window.addEventListener('scroll', () => {
+      const top = window.pageYOffset || document.documentElement.scrollTop
+      if (top > 50) {
+        if (!this.fixedStyle) {
+          this.fixedStyle = true
+        }
+      } else {
+        if (this.fixedStyle) {
+          this.fixedStyle = false
+        }
+      }
+    })
   },
   methods: {
     showMenu (conditionNumber) {
