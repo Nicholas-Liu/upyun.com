@@ -6,11 +6,12 @@
     .left
       .menu
         .title 产品
-        router-link(to="/products/file-storage") 云存储
         router-link(to="/products/cdn") CDN
-        router-link(to="/products/process") 云处理
         router-link(to="/products/live") 直播云
+        router-link(to="/products/file-storage") 云存储
         router-link(to="/products/vod") 点播云
+        router-link(to="/products/process") 云处理
+        router-link(to="/solutions/fusionstorage") 融合云存储
       .menu
         .title 支持
         a(href="http://docs.upyun.com/guide/" target="_blank") 新手入门
@@ -66,7 +67,7 @@
 
   .icp
     | © 2017 杭州又拍云科技有限公司
-    br 
+    br
     a(href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=EKkwRqX01_YRWuwCeFyJ4dlOpS0FEKZxFPfL_LOsL7kTrA6NBk3J!1069245859", target="_blank") 浙B2-20110282-2
     img(src="../assets/beian.png", width="20", height="20")
     a(href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602000847", target="_blank") 浙公网安备 33010602000847号

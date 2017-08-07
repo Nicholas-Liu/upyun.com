@@ -25,7 +25,6 @@
       .cover
         +animate(fadeInDown, .5s, .5s)
         position: relative
-        top: -80px
         height: 548px
         background: url('./assets/brandnew/banner.png') center no-repeat
   &.promotion

@@ -74,7 +74,7 @@
         .title 在线教育
       router-link.item(to="/solutions/fusionstorage")
         .img.fusion(:style="{'background-color': color}")
-        .title 融合云
+        .title 融合云存储
 </template>
 
 <script>
