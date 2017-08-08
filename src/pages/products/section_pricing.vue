@@ -4,7 +4,7 @@
 .pricing-module#section-pricing(@click="menuShowing = false")
   .container
     .main-title 产品价格
-    .sub-title(v-if="nowSelection !== 'certificate' && nowSelection !== 'sms' && nowSelection !== 'audit'") 按需计费，次日结算
+    .sub-title(v-if="nowSelection !== 'certificate' && nowSelection !== 'sms' && nowSelection !== 'audit' && nowSelection !== 'shortVideo'") 按需计费，次日结算
     .select
       .btn(@click.stop="menuShowing = !menuShowing")
         .icon(:class="nowSelection")
@@ -305,7 +305,24 @@
               span 邹先生 &nbsp;&nbsp;电话：13656668361
           .try(v-if="nowSelection === 'audit'")
             up_button(:color="color", url="https://audit.upyun.com", target="_blank") 立即体验
-      .bottom(v-if="nowSelection !== 'certificate' && nowSelection !== 'sms' && nowSelection !== 'audit'")
+        template(v-if="nowSelection === 'shortVideo'")
+          .title(:style="{ color }") 短视频 SDK 价格说明
+          table
+            thead
+              tr
+                th.col-1 计费项
+                th 价格
+            tbody
+              tr
+                td 免费版
+                td 免费
+              tr
+                td 标准版
+                td 联系我们
+              tr
+                td 高级版
+                td 联系我们
+      .bottom(v-if="nowSelection !== 'certificate' && nowSelection !== 'sms' && nowSelection !== 'audit' && nowSelection !== 'shortVideo'")
         router-link.more(to="/price_instruction") 查看更多价格说明
         router-link.to-pricing(to="/pricing") 费用计算器
       .bottom(v-if="nowSelection === 'certificate'")
@@ -327,7 +344,8 @@ export default {
         ups: '云处理',
         certificate: 'SSL 证书',
         sms: '短信服务',
-        audit: '内容识别'
+        audit: '内容识别',
+        shortVideo: '短视频'
       }
     }
   },

@@ -3,6 +3,7 @@ import NotFound from './pages/home/NotFound'
 import productUss from './pages/products/file-storage'
 import productCdn from './pages/products/cdn'
 import productUps from './pages/products/process'
+import productShortVideo from './pages/products/short_video'
 import productMarketing from './pages/products/marketing'
 import productVod from './pages/products/vod'
 import productLive from './pages/products/live'
@@ -36,6 +37,7 @@ export default [
   { path: '/products/file-storage', component: productUss },
   { path: '/products/cdn', component: productCdn },
   { path: '/products/process', component: productUps },
+  { path: '/products/short-video', component: productShortVideo },
   { path: '/products/marketing', component: productMarketing },
   { path: '/products/vod', component: productVod },
   { path: '/products/live', component: productLive },
