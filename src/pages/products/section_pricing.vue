@@ -19,7 +19,26 @@
       .top
         router-link.to-product(:to="{ path: `/products/${nowSelection}` }", v-if="nowSelection !== selection") 查看产品说明
       .inner
-        template(v-if="nowSelection === 'cdn' || nowSelection === 'vod'")
+        template(v-if="nowSelection === 'shortVideo'")
+          .title(:style="{ color }") 短视频 SDK 价格说明
+          table
+            thead
+              tr
+                th.col-1 计费项
+                th 价格
+            tbody
+              tr
+                td 免费版
+                td 免费
+              tr
+                td 标准版
+                td
+                  a(href="/contact" style="color: #15bdf9") 联系我们
+              tr
+                td 高级版
+                td
+                  a(href="/contact" style="color: #15bdf9") 联系我们
+        template(v-if="nowSelection === 'cdn' || nowSelection === 'vod' || nowSelection === 'shortVideo'")
           .title(:style="{ color }") CDN 服务价格说明
           table
             thead
@@ -107,7 +126,7 @@
             ul.supplement-lists
               li 不同视频规格价格不同，结算时按照宽高像素积大小确定单价，如：画面尺寸为：1440 × 720 ，宽 * 高 = 1036800 ，因此按照高清规格计费。
               li 按时长计费的计费项，是按输出时长进行计算。
-        template(v-if="nowSelection === 'uss' || nowSelection === 'vod'")
+        template(v-if="nowSelection === 'uss' || nowSelection === 'vod' || nowSelection === 'shortVideo'")
           .title(:style="{ color }") 云存储服务价格说明
           p 按照每日 CDN 流量使用，实行 1:1 的每日存储空间使用量免费。
           table
@@ -305,23 +324,6 @@
               span 邹先生 &nbsp;&nbsp;电话：13656668361
           .try(v-if="nowSelection === 'audit'")
             up_button(:color="color", url="https://audit.upyun.com", target="_blank") 立即体验
-        template(v-if="nowSelection === 'shortVideo'")
-          .title(:style="{ color }") 短视频 SDK 价格说明
-          table
-            thead
-              tr
-                th.col-1 计费项
-                th 价格
-            tbody
-              tr
-                td 免费版
-                td 免费
-              tr
-                td 标准版
-                td 联系我们
-              tr
-                td 高级版
-                td 联系我们
       .bottom(v-if="nowSelection !== 'certificate' && nowSelection !== 'sms' && nowSelection !== 'audit' && nowSelection !== 'shortVideo'")
         router-link.more(to="/price_instruction") 查看更多价格说明
         router-link.to-pricing(to="/pricing") 费用计算器

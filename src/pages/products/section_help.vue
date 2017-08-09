@@ -207,17 +207,12 @@
     .menus.short-video(v-if="selection === 'shortVideo'")
       .menu
         .title 使用概述
-        a() 短视频 SDK 简介
-        a() 存储快速入门
-        a() CDN 快速入门
+        a() 短视频简介
+        a() 短视频 DEMO
       .menu
         .title SDK
-        a() 短视频 iOS 免费版
-        a() 短视频 Android 免费版
-        a() 短视频 iOS 标准版
-        a() 短视频 Android 标准版
-        a() 短视频 iOS 高级版
-        a() 短视频 Android 高级版
+        a() 短视频 iOS SDK
+        a() 短视频 Android SDK
       .menu
         .title 短视频 SDK 体验
         ul.row-inline

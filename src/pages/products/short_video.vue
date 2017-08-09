@@ -8,7 +8,7 @@ layout(:colors="colorSet")
       .description 又拍云短视频（UPYUN Short Video）集短视频采集、上传、存储、分发、播放于一体，借助短视频 SDK、上传加速、不限量存储、稳定快速的 CDN 及播放器 SDK，为用户提供专业可靠的短视频解决方案。
       .buttons
         up_button(:color="colorSet.end", type="major", :url="$links.console", target="_blank") 免费试用
-        up_button(url="#section-pricing") 联系我们
+        up_button(url="/contact") 联系我们
       .price 短视频 SDK 提供免费版。
     .icon
       icon
@@ -41,11 +41,23 @@ layout(:colors="colorSet")
             img(src="./assets/shortVideo-icon-6.svg")
             .title 云端处理
             .description GPU+CPU 混合处理集群，支持短视频处理，提供转码、剪辑、拼接、切片、水印、截图等功能。
-    .section-hero
+    .section-video-introduction
       .container
         .main-title 短视频 SDK
         .description(style="width: 580px") 集成短视频拍摄、编辑、合成、播放功能，帮助用户省去开发时间
-        img.hero-img(src="./assets/ups_hero.png", width=935, height=439)
+        .introduction
+          .item
+            img(src="./assets/shortVideo-introduction-1.png")
+            p.item-introduction 断点续传和回删
+          .item
+            img(src="./assets/shortVideo-introduction-2.png")
+            p.item-introduction 美颜和滤镜
+          .item
+            img(src="./assets/shortVideo-introduction-3.png")
+            p.item-introduction 人脸识别和贴纸
+          .item
+            img(src="./assets/shortVideo-introduction-4.png")
+            p.item-introduction 自定义 MV
     up_gradient.section-video(:colors="colorSet")
       .inner
         .container
@@ -242,7 +254,7 @@ export default {
       allSdk: false,
       sdk: {
         'photography': {
-          name: '摄影',
+          name: '拍摄',
           module: [
             {
               moduleName: '分辨率',
@@ -545,11 +557,11 @@ export default {
   },
   head: {
     title: {
-      inner: '云处理 - 实时高效图片处理,音视频处理'
+      inner: '短视频 - 集采集、存储、分发、播放的一站式解决方案'
     },
     meta: [
-      { name: 'keywords', content: '云处理,音视频处理,图片处理,音视频转解码', id: 'kw' },
-      { name: 'description', content: '又拍云依托超大规模处理集群，提供多种图片处理、异步音视频处理及实时音频处理功能，有效帮助用户减少开发成本。', id: 'desc' }
+      { name: 'keywords', content: '短视频，短视频 SDK，又拍云短视频，阿里云短视频，七牛云短视频，腾讯云短视频，金山云短视频，涂图短视频，趣拍短视频', id: 'kw' },
+      { name: 'description', content: '集短视频采集、上传、存储、分发、播放于一体，借助短视频 SDK、上传加速、不限量存储、稳定快速的 CDN 及播放器 SDK，为用户提供专业可靠的短视频解决方案。', id: 'desc' }
     ]
   },
   methods: {
