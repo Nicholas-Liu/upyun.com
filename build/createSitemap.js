@@ -14,7 +14,7 @@ var sitemap = sm.createSitemap({
         { url: '/products/sms', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/products/sms/index.html' },
         { url: '/products/ssl', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/products/ssl/index.html' },
         { url: '/products/vod', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/products/vod/index.html' },
-        { url: '/products/short-video', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/products/short_video/index.html' },
+        { url: '/products/short-video', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/products/short-video/index.html' },
         { url: '/solutions/ecommerce', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/solutions/ecommerce/index.html' },
         { url: '/solutions/education', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/solutions/education/index.html' },
         { url: '/solutions/fusionstorage', changefreq: 'daily', priority: 0.8, lastmodrealtime: true, lastmodfile: 'prerender/solutions/fusionstorage/index.html' },
