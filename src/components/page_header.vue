@@ -43,6 +43,10 @@
             .title.purple 云处理
             .description 简单、灵活并支持多终端的云处理服务
             .icon.ups
+          router-link.item(to="/products/short-video")
+            .title.lighten-blue 短视频
+            .description 集合短视频采集、存储、分发、播放的整体解决方案
+            .icon.short-video
           router-link.item(to="/products/marketing")
             .title.darkBlue 流量营销服务
             .description 三网通用、超低成本并可快速开展的营销服务
@@ -118,9 +122,9 @@ export default {
     return {
       menuActive: false,
       menuShowing: false,
-      menuCondition: { left: -41, width: 455, height: 440, contentNumber: 0 },
+      menuCondition: { left: -41, width: 455, height: 460, contentNumber: 0 },
       conditions: [
-        { left: -41, width: 455, height: 440, contentNumber: 0 },
+        { left: -41, width: 455, height: 460, contentNumber: 0 },
         { left: 51, width: 455, height: 290, contentNumber: 1 },
         { left: 277, width: 384, height: 164, contentNumber: 2 },
         { left: 395, width: 384, height: 136, contentNumber: 3 }

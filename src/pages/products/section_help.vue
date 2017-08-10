@@ -1,5 +1,6 @@
 <style lang="sass" scoped>
 @import "../../assets/susy"
+@import "../others/mixin.sass"
 .section-help
   padding: 50px 0 70px
   background: white
@@ -26,6 +27,19 @@
       +container()
       .menu
         +gallery(1 of 4 1/2)
+    &.short-video
+      +container()
+      .menu
+        +gallery(1 of 3 0.6)
+        ul.row-inline
+          list-style: none
+          padding-left: 0
+          @include flexbox
+          li
+            color: #97a1ab
+            text-align: center
+            &:first-child
+              margin-right: 10px
     width: 800px
     .menu
       font-size: 18px
@@ -190,6 +204,24 @@
       .menu
         .title 注意事项
         a(href="http://docs.upyun.com/sms/#4" target="_blank") 常见问题
+    .menus.short-video(v-if="selection === 'shortVideo'")
+      .menu
+        .title 使用概述
+        a(href="https://docs.upyun.com/video/", target="_blank") 短视频简介
+        a(href="https://docs.upyun.com/video/short_video_demo/", target="_blank") 短视频 DEMO
+      .menu
+        .title SDK
+        a(href="https://github.com/upyun/ios-short-video", target="_blank") 短视频 iOS SDK
+        a(href="https://github.com/upyun/Android-short-video", target="_blank") 短视频 Android SDK
+      .menu
+        .title 短视频 SDK 体验
+        ul.row-inline
+          li
+            img(src="./assets/android_short_video.png" width="100" height="100")
+            span Android
+          li
+            img(src="./assets/ios_short_video.png" width="100" height="100")
+            span iOS
     .try(v-if="selection !== 'certificate' && selection !== 'sms'")
       up_button(:color="color", :url="$links.console", target="_blank") 免费试用
     .try(v-if="selection === 'certificate'")
@@ -202,7 +234,7 @@ export default {
   props: ['selection', 'color'],
   computed: {
     show_Maintitle () {
-      return this.selection === 'cdn' || this.selection === 'live' || this.selection === 'uss' || this.selection === 'ups' || this.selection === 'certificate' || this.selection === 'sms'
+      return this.selection === 'cdn' || this.selection === 'live' || this.selection === 'uss' || this.selection === 'ups' || this.selection === 'certificate' || this.selection === 'sms' || this.selection === 'shortVideo'
     }
   }
 }

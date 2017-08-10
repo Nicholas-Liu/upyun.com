@@ -27,7 +27,7 @@
 </style>
 
 <template lang="pug">
-a.up_button(:class="type", :style="buttonStyle", :href="url")
+a.up_button(:class="type", :style="buttonStyle", :href="url", @click="buttonClick")
   slot
 </template>
 
@@ -42,12 +42,23 @@ export default {
     },
     url: {
       default: null
+    },
+    click: {
+      type: Function,
+      required: false
     }
   },
   computed: {
     buttonStyle: function () {
       if (this.type === 'major') return { 'color': this.color }
       else return { 'color': this.color, 'border-color': this.color }
+    }
+  },
+  methods: {
+    buttonClick () {
+      if (this.click) {
+        this.click()
+      }
     }
   }
 }
