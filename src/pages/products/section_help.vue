@@ -207,12 +207,12 @@
     .menus.short-video(v-if="selection === 'shortVideo'")
       .menu
         .title 使用概述
-        a() 短视频简介
-        a() 短视频 DEMO
+        a(href="https://docs.upyun.com/video/", target="_blank") 短视频简介
+        a(href="https://docs.upyun.com/video/short_video_demo/", target="_blank") 短视频 DEMO
       .menu
         .title SDK
-        a() 短视频 iOS SDK
-        a() 短视频 Android SDK
+        a(href="https://github.com/upyun/ios-short-video", target="_blank") 短视频 iOS SDK
+        a(href="https://github.com/upyun/Android-short-video", target="_blank") 短视频 Android SDK
       .menu
         .title 短视频 SDK 体验
         ul.row-inline

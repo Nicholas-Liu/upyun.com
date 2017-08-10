@@ -44,7 +44,7 @@ layout(:colors="colorSet")
     .section-video-introduction
       .container
         .main-title 短视频 SDK
-        .description(style="width: 580px") 集成短视频拍摄、编辑、合成、播放功能，帮助用户省去开发时间
+        .description(style="width: 650px") 集成短视频拍摄、编辑、合成、上传、播放功能，帮助用户省去开发时间
         .introduction
           .item
             img(src="./assets/shortVideo-introduction-1.png")
@@ -149,25 +149,6 @@ layout(:colors="colorSet")
             td
               i.icon-ok(v-if="module.advanced")
           tr(v-if="allSdk")
-            td(:rowspan="sdk.distribution.module.length") {{sdk.distribution.name}}
-            td 1
-            td {{sdk.distribution.module[0].moduleName}}
-            td
-              i.icon-ok(v-if="sdk.distribution.module[0].free")
-            td
-              i.icon-ok(v-if="sdk.distribution.module[0].standard")
-            td
-              i.icon-ok(v-if="sdk.distribution.module[0].advanced")
-          tr(v-for="(module, index) in sdk.distribution.module" v-if="index > 0 && allSdk")
-            td {{index + 1}}
-            td {{module.moduleName}}
-            td
-              i.icon-ok(v-if="module.free")
-            td
-              i.icon-ok(v-if="module.standard")
-            td
-              i.icon-ok(v-if="module.advanced")
-          tr(v-if="allSdk")
             td(:rowspan="sdk.play.module.length") {{sdk.play.name}}
             td 1
               td {{sdk.play.module[0].moduleName}}
@@ -186,27 +167,8 @@ layout(:colors="colorSet")
               i.icon-ok(v-if="module.standard")
             td
               i.icon-ok(v-if="module.advanced")
-          tr(v-if="allSdk")
-            td(:rowspan="sdk.cloudProcessing.module.length") {{sdk.cloudProcessing.name}}
-            td 1
-            td {{sdk.cloudProcessing.module[0].moduleName}}
-            td
-              i.icon-ok(v-if="sdk.cloudProcessing.module[0].free")
-            td
-              i.icon-ok(v-if="sdk.cloudProcessing.module[0].standard")
-            td
-              i.icon-ok(v-if="sdk.cloudProcessing.module[0].advanced")
-          tr(v-for="(module, index) in sdk.cloudProcessing.module" v-if="index > 0 && allSdk")
-            td {{index + 1}}
-            td {{module.moduleName}}
-            td
-              i.icon-ok(v-if="module.free")
-            td
-              i.icon-ok(v-if="module.standard")
-            td
-              i.icon-ok(v-if="module.advanced")
         up_button(:color="colorSet.mid", :click="viewAll", v-show="!allSdk") 查看全部
-        up_button(:color="colorSet.mid", :click="viewAll", v-show="allSdk", url="#section-version") 查看部分
+        up_button(:color="colorSet.mid", :click="viewAll", v-show="allSdk", url="#section-version") 收起
     .section-scenes
       .container
         .main-title 应用场景
@@ -219,7 +181,7 @@ layout(:colors="colorSet")
           .item
             .img
               img(src="./assets/shortVideo-sence-2.svg")
-            .title 电商买家&卖家秀
+            .title 电商买家卖家秀
           .item
             .img
               img(src="./assets/shortVideo-sence-3.svg")
@@ -257,7 +219,7 @@ export default {
           name: '拍摄',
           module: [
             {
-              moduleName: '分辨率',
+              moduleName: '分辨率、码率设置',
               free: false,
               standard: false,
               advanced: true
@@ -483,23 +445,6 @@ export default {
             }
           ]
         },
-        'distribution': {
-          name: '分发',
-          module: [
-            {
-              moduleName: '分段加载（分段缓存）',
-              free: true,
-              standard: true,
-              advanced: true
-            },
-            {
-              moduleName: '视频拖拉',
-              free: true,
-              standard: true,
-              advanced: true
-            }
-          ]
-        },
         'play': {
           name: '播放',
           module: [
@@ -529,23 +474,6 @@ export default {
             },
             {
               moduleName: '自定义界面布局和 UI 样式',
-              free: true,
-              standard: true,
-              advanced: true
-            }
-          ]
-        },
-        'cloudProcessing': {
-          name: '云端处理',
-          module: [
-            {
-              moduleName: '转清晰度，支持 H.265',
-              free: true,
-              standard: true,
-              advanced: true
-            },
-            {
-              moduleName: '视频切片',
               free: true,
               standard: true,
               advanced: true

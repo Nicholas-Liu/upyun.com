@@ -24,6 +24,7 @@ webpackConfig.plugins.push(
       '/products/ssl',
       '/products/sms',
       '/products/audit',
+      '/products/short-video',
       '/solutions/meida',
       '/solutions/mobile',
       '/solutions/ecommerce',
