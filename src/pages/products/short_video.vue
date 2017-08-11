@@ -57,7 +57,7 @@ layout(:colors="colorSet")
             p.item-introduction 人脸识别和贴纸
           .item
             img(src="./assets/shortVideo-introduction-4.png")
-            p.item-introduction 自定义 MV
+            p.item-introduction 自定义背景音乐
     up_gradient.section-video(:colors="colorSet")
       .inner
         .container
@@ -245,7 +245,7 @@ export default {
             {
               moduleName: '定时拍摄，定时时长设置',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
@@ -257,7 +257,7 @@ export default {
             {
               moduleName: '重拍（回删）',
               free: true,
-              standard: false,
+              standard: true,
               advanced: true
             },
             {
@@ -275,7 +275,7 @@ export default {
             {
               moduleName: '贴纸',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
@@ -346,7 +346,7 @@ export default {
             {
               moduleName: '贴纸',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
