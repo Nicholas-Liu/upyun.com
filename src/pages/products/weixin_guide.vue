@@ -164,10 +164,9 @@ export default {
       }
     },
     downloadApk () {
-      const isAndroid = window.navigator.appVersion.match(/android/gi)
       const isIPhone = window.navigator.appVersion.match(/iphone/gi)
       if (isIPhone) window.location.href = 'https://itunes.apple.com/cn/app/id1265074958?mt=8'
-      else if (isAndroid) {
+      else {
         const isweixin = /micromessenger/.test(navigator.userAgent.toLowerCase())
         if (isweixin) this.isweixin = true
         else window.location.href = 'http://p.upyun.com/app/upyun_android_short_video.apk'
