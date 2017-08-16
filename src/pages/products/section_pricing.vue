@@ -160,102 +160,120 @@
                 td 0.43 元/GB
         template(v-if="nowSelection === 'certificate'")
           .title(:style="{ color }") Symantec 证书服务价格说明
-          table.fix-width
+          table
             thead
               tr
                 th 类型
                 th 支持
                 th 域名个数
-                th 价格（元/年）
+                th 原价（元/年）
+                th 又拍价（元/年）
             tbody
               tr
                 td(rowspan="3") 企业型（OV）
                 td 标准域名
                 td 1
                 td 4900
+                td 4165
               tr
                 td 多个域名
                 td 2
                 td 9800
+                td 8330
               tr
                 td 泛域名
                 td 1
                 td 39900
+                td 33915
               tr
                 td(rowspan="2") 增强型（EV）
                 td 标准域名
                 td 1
                 td 8000
+                td 6800
               tr
                 td 多个域名
                 td 2
                 td 16000
+                td 13600
           .title(:style="{ color }") GeoTrust 证书服务价格说明
-          table.fix-width
+          table
             thead
               tr
                 th 类型
                 th 支持
                 th 域名个数
-                th 价格（元/年）
+                th 原价（元/年）
+                th 又拍价（元/年）
             tbody
               tr
                 td(rowspan="3") 企业型（OV）
                 td 标准域名
                 td 1
                 td 2900
+                td 2465
               tr
                 td 多个域名
                 td 5
                 td 5600
+                td 4760
               tr
                 td 泛域名
                 td 1
                 td 6900
+                td 5865
               tr
                 td(rowspan="2") 增强型（EV）
                 td 标准域名
                 td 1
                 td 4900
+                td 4165
               tr
                 td 多个域名
                 td 5
                 td 9700
+                td 8245
           .title(:style="{ color }") TrustAsia 证书服务价格说明
-          table.fix-width
+          table
             thead
               tr
                 th 类型
                 th 支持
                 th 域名个数
-                th 价格（元/年）
+                th 原价（元/年）
+                th 又拍价（元/年）
             tbody
               tr
                 td(rowspan="3") 域名型（DV）
                 td 标准域名
                 td 1
-                td 免费（原价 1900）
+                td 1900
+                td 免费
               tr
                 td 多个域名
                 td 5
                 td 5000
+                td 3750
               tr
                 td 泛域名
                 td 1
                 td 1999
+                td 1499
           .title(:style="{ color }") Let’s Encrypt 证书服务价格说明
-          table.fix-width
+          table
             thead
               tr
                 th 类型
                 th 支持
                 th 域名个数
-                th 价格（元/年）
+                th 原价（元/年）
+                th 又拍价（元/年）
             tbody
               tr
                 td 域名型（DV）
                 td 标准域名
                 td 1
+                td 免费
                 td 免费
         template(v-if="nowSelection === 'sms'")
           .title(:style="{ color }") 短信资源包价格说明

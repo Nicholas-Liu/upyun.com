@@ -31,15 +31,6 @@
       +container()
       .menu
         +gallery(1 of 3 0.6)
-        ul.row-inline
-          list-style: none
-          padding-left: 0
-          @include flexbox
-          li
-            color: #97a1ab
-            text-align: center
-            &:first-child
-              margin-right: 10px
     width: 800px
     .menu
       font-size: 18px
@@ -215,13 +206,7 @@
         a(href="https://github.com/upyun/Android-short-video", target="_blank") 短视频 Android SDK
       .menu
         .title 短视频 SDK 体验
-        ul.row-inline
-          li
-            img(src="./assets/android_short_video.png" width="100" height="100")
-            span Android
-          li
-            img(src="./assets/ios_short_video.png" width="100" height="100")
-            span iOS
+        img(src="./assets/shortVideo-app.png", width="150")
     .try(v-if="selection !== 'certificate' && selection !== 'sms'")
       up_button(:color="color", :url="$links.console", target="_blank") 免费试用
     .try(v-if="selection === 'certificate'")
