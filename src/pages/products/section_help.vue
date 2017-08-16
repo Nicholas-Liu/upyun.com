@@ -171,19 +171,19 @@
         a(href="http://docs.upyun.com/cdn/ssl/#_1" target="_blank") 产品介绍
         a(href="http://docs.upyun.com/cdn/ssl/#_2" target="_blank") 名词解释
         a(href="http://docs.upyun.com/cdn/ssl/#_3" target="_blank") 产品功能
-        a(href="http://docs.upyun.com/cdn/ssl/#_4" target="_blank") 产品优势
+        a(href="http://docs.upyun.com/cdn/ssl/#_7" target="_blank") 产品优势
       .menu
         .title 购买指导
-        a(href="http://docs.upyun.com/cdn/ssl/#_8" target="_blank") 购买流程
-        a(href="http://docs.upyun.com/cdn/ssl/#_9" target="_blank") 价格总览
-        a(href="http://docs.upyun.com/cdn/ssl/#_10" target="_blank") 退款服务
+        a(href="http://docs.upyun.com/cdn/ssl/#_13" target="_blank") 购买流程
+        a(href="http://docs.upyun.com/cdn/ssl/#_15" target="_blank") 价格总览
+        a(href="http://docs.upyun.com/cdn/ssl/#_16" target="_blank") 退款服务
       .menu
         .title 快速入门
-        a(href="http://docs.upyun.com/cdn/ssl/#_13" target="_blank") 付费证书申购
-        a(href="http://docs.upyun.com/cdn/ssl/#_14" target="_blank") 免费证书申购
+        a(href="http://docs.upyun.com/cdn/ssl/#_19" target="_blank") 付费证书申购
+        a(href="http://docs.upyun.com/cdn/ssl/#_20" target="_blank") 免费证书申购
       .menu
         .title 常见问题
-        a(href="http://docs.upyun.com/cdn/ssl/#_15" target="_blank") 注意事项
+        a(href="http://docs.upyun.com/cdn/ssl/#_21" target="_blank") 注意事项
         a(href="http://docs.upyun.com/cdn/ssl/#dv-ssl" target="_blank") DV SSL 证书验证
     .menus.live(v-if="selection === 'sms'")
       .menu
