@@ -58,18 +58,12 @@ layout(:colors="colorSet")
           .item
             img(src="./assets/shortVideo-introduction-4.png")
             p.item-introduction 自定义背景音乐
-    up_gradient.section-video(:colors="colorSet")
+    up_gradient#short-video-demo.section-video(:colors="colorSet")
       .inner
         .container
           .main-title 短视频 SDK 体验
           .description 扫一扫，立即体验
-          ul.row-inline
-            li
-              img(src="./assets/android_short_video.png" width="180")
-              p Android
-            li
-              img(src="./assets/ios_short_video.png" width="180")
-              p iOS
+          img(src="./assets/shortVideo-app.png" width="240")
     #section-version
       .container
         .main-title 短视频 SDK 版本

@@ -6,12 +6,12 @@
     div(slot="hero")
       summit(animate)
       .slide
-        .title OV & EV SSL 证书上线
-        .sub-title 申购便捷，一键部署，快速实现全站 HTTPS
-        div(style="font-size: 26px; margin-top: 15px") 限时优惠，低至 75 折
+        .title 这不止是短视频 SDK
+        .sub-title 更是集短视频 SDK、上传、存储、分发、播放的整体解决方案
+        div(style="font-size: 26px; margin-top: 15px") 30+ 功能，5 大产品，1 天接入
         .buttons
-          a(href="https://console.upyun.com/toolbox/createCertificate/", class="up_button major", style="color:#2ec0ec", target="_blank") 立即申购
-          router-link(to="/products/ssl", class="up_button outline") 查看详情
+          router-link(to="/products/short-video", class="up_button major", style="color:#2ec0ec") 免费版获取
+          a(href="/products/short-video#short-video-demo", class="up_button outline") Demo 体验
     div(slot="page")
       .section-main
         .container
