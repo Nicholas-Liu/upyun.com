@@ -9,7 +9,7 @@ layout(:colors="colorSet")
       .buttons
         up_button(:color="colorSet.end", type="major", :url="$links.console", target="_blank") 免费试用
         up_button(url="/contact") 联系我们
-      .price 短视频 SDK 提供免费版。
+      .price 短视频 SDK 提供免费版，标准版可以试用 1 个月。
     .icon
       icon
   template(slot="page")
