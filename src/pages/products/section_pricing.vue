@@ -35,7 +35,7 @@
                 td
                   a(href="/contact" style="color: #15bdf9") 联系我们
               tr
-                td 高级版
+                td 专业版
                 td
                   a(href="/contact" style="color: #15bdf9") 联系我们
         template(v-if="nowSelection === 'cdn' || nowSelection === 'vod' || nowSelection === 'shortVideo'")
