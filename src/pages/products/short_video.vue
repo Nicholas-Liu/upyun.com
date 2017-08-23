@@ -48,7 +48,7 @@ layout(:colors="colorSet")
         .introduction
           .item
             img(src="./assets/shortVideo-introduction-1.png")
-            p.item-introduction 断点续传和回删
+            p.item-introduction 断点续拍和回删
           .item
             img(src="./assets/shortVideo-introduction-2.png")
             p.item-introduction 美颜和滤镜
@@ -67,7 +67,7 @@ layout(:colors="colorSet")
     #section-version
       .container
         .main-title 短视频 SDK 版本
-        .description 提供免费版、标准版、高级版，您可以根据业务需要选择
+        .description 提供免费版、标准版、专业版，您可以根据业务需要选择
         table
           tr
             td(:rowspan="sdk.photography.module.length + 1") {{sdk.photography.name}}
@@ -75,7 +75,7 @@ layout(:colors="colorSet")
             td
             td 免费版
             td 标准版
-            td 高级版
+            td 专业版
           tr(v-for="(module, index) in sdk.photography.module")
             td {{index + 1}}
             td {{module.moduleName}}
@@ -243,7 +243,7 @@ export default {
               advanced: true
             },
             {
-              moduleName: '断点拍摄',
+              moduleName: '断点续拍',
               free: true,
               standard: true,
               advanced: true
