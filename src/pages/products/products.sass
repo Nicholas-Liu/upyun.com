@@ -154,21 +154,6 @@
       font-size: 20px
       line-height: 1.3
       color: white
-    ul.row-inline
-      padding-left: 0
-      list-style: none
-      @include flexbox;
-      @include flex-justify(center)
-      li
-        img
-          border-radius: 4px
-        p
-          font-size: 18px
-          color: white
-        &:first-child
-          margin-right: 80px
-        &:last-child
-          margin-left: 80px
 #section-version
   text-align: center
   overflow: hidden
@@ -191,7 +176,6 @@
         td
           &:nth-child(1)
             width: 17%
-            font-size: 18px
           &:nth-child(2)
             width: 10%
             background-color: #F0F8FB
@@ -210,6 +194,8 @@
       text-align: center
       color: #0d253e
       border: 1px solid #DCDCDC
+      &:first-child
+        font-size: 18px
   .icon-ok
     display: block
     width: 20px

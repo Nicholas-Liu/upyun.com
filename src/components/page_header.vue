@@ -45,7 +45,7 @@
             .icon.ups
           router-link.item(to="/products/short-video")
             .title.lighten-blue 短视频
-            .description 集合短视频采集、存储、分发、播放的整体解决方案
+            .description 集短视频采集、存储、分发、播放的整体解决方案
             .icon.short-video
           router-link.item(to="/products/marketing")
             .title.darkBlue 流量营销服务

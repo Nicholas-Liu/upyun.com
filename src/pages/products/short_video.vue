@@ -9,7 +9,7 @@ layout(:colors="colorSet")
       .buttons
         up_button(:color="colorSet.end", type="major", :url="$links.console", target="_blank") 免费试用
         up_button(url="/contact") 联系我们
-      .price 短视频 SDK 提供免费版。
+      .price 短视频 SDK 提供免费版，标准版可以试用 1 个月。
     .icon
       icon
   template(slot="page")
@@ -57,19 +57,13 @@ layout(:colors="colorSet")
             p.item-introduction 人脸识别和贴纸
           .item
             img(src="./assets/shortVideo-introduction-4.png")
-            p.item-introduction 自定义 MV
-    up_gradient.section-video(:colors="colorSet")
+            p.item-introduction 自定义背景音乐
+    up_gradient#short-video-demo.section-video(:colors="colorSet")
       .inner
         .container
           .main-title 短视频 SDK 体验
           .description 扫一扫，立即体验
-          ul.row-inline
-            li
-              img(src="./assets/android_short_video.png" width="180")
-              p Android
-            li
-              img(src="./assets/ios_short_video.png" width="180")
-              p iOS
+          img(src="./assets/shortVideo-app.png" width="240")
     #section-version
       .container
         .main-title 短视频 SDK 版本
@@ -245,7 +239,7 @@ export default {
             {
               moduleName: '定时拍摄，定时时长设置',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
@@ -257,7 +251,7 @@ export default {
             {
               moduleName: '重拍（回删）',
               free: true,
-              standard: false,
+              standard: true,
               advanced: true
             },
             {
@@ -275,7 +269,7 @@ export default {
             {
               moduleName: '贴纸',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
@@ -346,7 +340,7 @@ export default {
             {
               moduleName: '贴纸',
               free: false,
-              standard: true,
+              standard: false,
               advanced: true
             },
             {
