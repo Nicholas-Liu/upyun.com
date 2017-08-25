@@ -70,7 +70,8 @@ export default {
         { name: '观止云', file: 'guanzhi', link: 'http://www.bravovcloud.com/' },
         { name: '云片', file: 'yunpian', link: 'https://www.yunpian.com/' },
         { name: '付钱拉', file: 'fuqianla', link: 'http://www.fuqianla.net/' },
-        { name: '优帆远扬', file: 'yousails', link: 'https://yousails.com/' }
+        { name: '优帆远扬', file: 'yousails', link: 'https://yousails.com/' },
+        { name: '坚果云', file: 'nutstore', link: 'https://www.jianguoyun.com/' }
       ]
     }
   },
