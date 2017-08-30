@@ -16,7 +16,7 @@ layout(:colors="colorSet")
       .description 又拍云内容识别服务（UPYUN Content Detection，简称 UCD）是基于人工智能、大数据分析而研发的新型信息安全解决方案，能实时处理多媒体内容（图片、视频、直播、文本等），识别色情、暴恐、广告等多种信息，为企业大幅度节省安全成本，提高安全处理效率。
       .buttons
         up_button(:color="colorSet.mid", type="major", url="https://console.upyun.com/toolbox/audit/" target="_blank") 免费试用
-        up_button(url="http://support.upyun.com/kchat/18915?group=22540&from=mainsite" target="_blank") 联系我们
+        up_button(url="/contact") 联系我们
     .icon
       icon
   template(slot="page")
