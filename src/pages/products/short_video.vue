@@ -8,7 +8,7 @@ layout(:colors="colorSet")
       .description 又拍云短视频（UPYUN Short Video）集短视频采集、上传、存储、分发、播放于一体，借助短视频 SDK、上传加速、不限量存储、稳定快速的 CDN 及播放器 SDK，为用户提供专业可靠的短视频解决方案。
       .buttons
         up_button(:color="colorSet.end", type="major", :url="$links.console", target="_blank") 免费试用
-        up_button(url="/contact") 联系我们
+        up_button(url="http://support.upyun.com/kchat/18915?group=22540&from=mainsite", target="_blank") 联系我们
       .price 短视频 SDK 提供免费版，标准版可以试用 1 个月。
     .icon
       icon
