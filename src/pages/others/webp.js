@@ -271,12 +271,12 @@ export default function () {
       animatedgifSize = 0;
       animatedgifToWebpSize = 0;
       animatedgifSaved = 0;
-      $('.to-animated-webp > .text .save-size').hide();
 
       $('#select-file').off('change'); // 撤销之前绑定的change事件
 
       $('#select-file').click();
       $('#select-file').change(function() {
+        $('.to-animated-webp > .text .save-size').hide();
         let sourceUrl;
         let webpUrl;
         const fileName = $('#select-file')[0].files[0].name;
@@ -338,27 +338,49 @@ export default function () {
                   $('#cover-gif').hide();
                   getImgSize(sourceUrl, 'animated-gif');
                 }
-                // 隔5秒后加载转换后的Webp格式图片
+                // 最多10次轮询获取转换后的webp图片（避免转换时间过长引起获取webp图片404的问题）
+                let count = 0;
                 setTimeout(function(){
-                  $(imgAnimatedGifToWebp).attr('src', webpUrl);
-                  document.getElementById('img-to-animated-webp').onload = function() {
-                    const imgWidth = this.naturalWidth;
-                    const imgHeight = this.naturalHeight;
-                    imgAnimatedGifToWebpRatio.text(`${imgWidth} x ${imgHeight}`);
-                    $('#cover-webp').hide();
-                    getImgSize(webpUrl, 'to-animated-webp');
-                    setTimeout(function(){
-                      animatedgifSaved = ((animatedgifSize - animatedgifToWebpSize) / animatedgifSize * 100).toFixed(0);
-                      if (animatedgifSaved > 0) {
-                        $('.to-animated-webp > .text .save-size').show();
-                        $('.to-animated-webp > .text .save-size').text(`${animatedgifSaved}%`);
-                      }
-                    }, 1000);
-                  }
-                  document.getElementById('img-to-animated-webp').onerror = function() {
-                    $('#cover-webp').hide();
-                  }
+                  checkUpload();
                 }, 5000);
+                function checkUpload() {
+                  const xhr = new XMLHttpRequest();
+                  xhr.open('HEAD', `${webpUrl}?_=${new Date().getTime()}`, true);
+                  xhr.send();
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                      if (xhr.status === 200) {
+                        $(imgAnimatedGifToWebp).attr('src', webpUrl);
+                        document.getElementById('img-to-animated-webp').onload = function() {
+                          const imgWidth = this.naturalWidth;
+                          const imgHeight = this.naturalHeight;
+                          imgAnimatedGifToWebpRatio.text(`${imgWidth} x ${imgHeight}`);
+                          $('#cover-webp').hide();
+                          getImgSize(webpUrl, 'to-animated-webp');
+                          setTimeout(function(){
+                            animatedgifSaved = ((animatedgifSize - animatedgifToWebpSize) / animatedgifSize * 100).toFixed(0);
+                            if (animatedgifSaved > 0) {
+                              $('.to-animated-webp > .text .save-size').show();
+                              $('.to-animated-webp > .text .save-size').text(`${animatedgifSaved}%`);
+                            }
+                          }, 1000);
+                        }
+                        document.getElementById('img-to-animated-webp').onerror = function() {
+                          $('#cover-webp').hide();
+                        }
+                      } else {
+                        if (count < 10) {
+                          count++;
+                          setTimeout(function(){
+                            checkUpload();
+                          }, 3000);
+                        } else {
+                          return;
+                        }
+                      }
+                    }
+                  }
+                }
               }).fail(function(res, textStatus, error) {
                 $('#select-file')[0].value = ''; // 清除input文件输入框
                 try {
