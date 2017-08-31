@@ -271,12 +271,12 @@ export default function () {
       animatedgifSize = 0;
       animatedgifToWebpSize = 0;
       animatedgifSaved = 0;
-      $('.to-animated-webp > .text .save-size').hide();
 
       $('#select-file').off('change'); // 撤销之前绑定的change事件
 
       $('#select-file').click();
       $('#select-file').change(function() {
+        $('.to-animated-webp > .text .save-size').hide();
         let sourceUrl;
         let webpUrl;
         const fileName = $('#select-file')[0].files[0].name;
