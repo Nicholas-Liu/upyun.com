@@ -13,9 +13,10 @@
       router-link.nav(to="/pricing") 价格
       .nav(@mouseover="showMenu(2)", @mouseout="hideMenu") 帮助与文档
         span.select-triangle
-      .nav(@mouseover="showMenu(3)", @mouseout="hideMenu") 最新活动
+      .nav(@mouseover="showMenu(3)", @mouseout="hideMenu") 小拍日志
         span.select-triangle
-      router-link.nav(to="/brandNew") 品牌形象升级
+      .nav(@mouseover="showMenu(4)", @mouseout="hideMenu") 热门专题
+        span.select-triangle
     .side-navs
       a.nav(:href="$links.register" target="_blank") 注册
       a.nav.console(:href="$links.login" target="_blank") 控制台
@@ -102,18 +103,16 @@
             .title 开发者社区
             a.link(href="http://segmentfault.com/t/又拍云存储" target="_blank") 技术问答
             a.link(href="https://blog.upyun.com/" target="_blank") BLOG
-        .list(v-show="menuCondition.contentNumber === 3")
-          .row
-            .title 创业扶持
-            router-link.link(to="/league") 又拍云联盟
-          .row
-            .title 线下活动
-            a.link(href="http://opentalk.upyun.com/show/index" target="_blank") OpenTalk
-            router-link.link(to="/media_reports") 媒体报道
-          .row
-            .title 热门专题
-            router-link.link(to="/https") HTTPS 加密
-            router-link.link(to="/webp") WebP 体验
+        .list.list-one-column(v-show="menuCondition.contentNumber === 3")
+          a.link(href="https://tech.upyun.com/?topic=%E4%BA%A7%E5%93%81%E5%8A%A8%E6%80%81&page=1", target="_blank") 产品动态
+          a.link(href="https://tech.upyun.com/?topic=%E5%AA%92%E4%BD%93%E6%8A%A5%E9%81%93&page=1", target="_blank") 媒体报道
+          a.link(href="https://tech.upyun.com/?topic=%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB&page=1", target="_blank") 技术分享
+          a.link(href="https://tech.upyun.com/?topic=Opentalk&page=1", target="_blank") Open Talk
+        .list.list-one-column(v-show="menuCondition.contentNumber === 4")
+          router-link.link(to="/https") HTTPS 加密
+          router-link.link(to="/webp") WebP 体验
+          router-link.link(to="/league") 又拍云联盟
+          router-link.link(to="/brandNew") 品牌形象升级
 </template>
 
 <script>
@@ -127,7 +126,8 @@ export default {
         { left: -41, width: 455, height: 460, contentNumber: 0 },
         { left: 51, width: 455, height: 290, contentNumber: 1 },
         { left: 277, width: 384, height: 164, contentNumber: 2 },
-        { left: 395, width: 384, height: 136, contentNumber: 3 }
+        { left: 525, width: 134, height: 147, contentNumber: 3 },
+        { left: 620, width: 159, height: 150, contentNumber: 4 }
       ],
       timeout: {},
       fixedStyle: false
