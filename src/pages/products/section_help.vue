@@ -200,6 +200,7 @@
         .title 使用概述
         a(href="https://docs.upyun.com/video/", target="_blank") 短视频简介
         a(href="https://docs.upyun.com/video/short_video_demo/", target="_blank") 短视频 DEMO
+        a(href="https://blog.upyun.com/?p=1700", target="_blank") 接入指南
       .menu
         .title SDK
         a(href="https://github.com/upyun/ios-short-video", target="_blank") 短视频 iOS SDK
