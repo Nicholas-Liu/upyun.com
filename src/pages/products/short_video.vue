@@ -20,7 +20,7 @@ layout(:colors="colorSet")
           .item
             img(src="./assets/shortVideo-icon-1.svg")
             .title 短视频 SDK
-            .description 支持短视频拍摄、编辑、合成，支持断点续拍、回删、美颜、滤镜、水印、贴纸、自定义背景音乐等功能。
+            .description 支持短视频拍摄、编辑、合成，支持断点续拍、回删、美颜、滤镜、水印、贴纸、自定义背景音乐、大眼瘦脸等功能。
           .item
             img(src="./assets/shortVideo-icon-2.svg")
             .title 就近上传
@@ -268,6 +268,12 @@ export default {
             },
             {
               moduleName: '贴纸',
+              free: false,
+              standard: false,
+              advanced: true
+            },
+            {
+              moduleName: '大眼瘦脸',
               free: false,
               standard: false,
               advanced: true
