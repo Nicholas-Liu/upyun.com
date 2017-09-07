@@ -23,7 +23,7 @@
     "normalize.css": "^5.0.0",
     "numeral": "^2.0.4",
     "pm2": "^2.4.6",
-    "prerender-spa-plugin": "^2.0.1",
+    "prerender-spa-plugin": "^2.1.0",
     "pug": "^2.0.0-beta6",
     "sass-loader": "^4.1.1",
     "sitemap": "^1.12.0",
