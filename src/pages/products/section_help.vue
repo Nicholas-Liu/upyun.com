@@ -56,15 +56,15 @@
     .menus.cdn(v-if="selection === 'cdn'")
       .menu
         .title 产品介绍
-        a(href="http://docs.upyun.com/cdn/product/#_1" target="_blank") 产品概述
-        a(href="http://docs.upyun.com/cdn/product/#_2" target="_blank") 产品架构
-        a(href="http://docs.upyun.com/cdn/product/#_3" target="_blank") 产品功能
-        a(href="http://docs.upyun.com/cdn/product/#_4" target="_blank") 产品优势
-        a(href="http://docs.upyun.com/cdn/product/#_5" target="_blank") 应用场景
-        a(href="http://docs.upyun.com/cdn/product/#_6" target="_blank") 资源分布
+        a(href="https://docs.upyun.com/cdn/product/#_1" target="_blank") 产品概述
+        a(href="https://docs.upyun.com/cdn/product/#_2" target="_blank") 产品架构
+        a(href="https://docs.upyun.com/cdn/product/#_3" target="_blank") 产品功能
+        a(href="https://docs.upyun.com/cdn/product/#_4" target="_blank") 产品优势
+        a(href="https://docs.upyun.com/cdn/product/#_5" target="_blank") 应用场景
+        a(href="https://docs.upyun.com/cdn/product/#_6" target="_blank") 资源分布
       .menu
         .title 快速入门
-        a(href="http://docs.upyun.com/cdn/guide/#_1" target="_blank") 准备工作
+        a(href="https://docs.upyun.com/cdn/guide/#_1" target="_blank") 准备工作
         a(href="https://docs.upyun.com/cdn/guide/#_2" target="_blank") 账号注册
         a(href="https://docs.upyun.com/cdn/guide/#_3" target="_blank") 帐号认证
         a(href="https://docs.upyun.com/cdn/guide/#_4" target="_blank") 创建服务
@@ -72,33 +72,33 @@
         a(href="https://docs.upyun.com/cdn/guide/#_6" target="_blank") 缓存验证
       .menu
         .title 使用指南
-        a(href="http://docs.upyun.com/cdn/service/" target="_blank") 服务管理
-        a(href="http://docs.upyun.com/cdn/config/" target="_blank") 功能配置
-        a(href="http://docs.upyun.com/cdn/rewrite/" target="_blank") 简单编程
-        a(href="http://docs.upyun.com/cdn/analysis/" target="_blank") 统计分析
-        a(href="http://docs.upyun.com/cdn/refresh/" target="_blank") 刷新预热
-        a(href="http://docs.upyun.com/cdn/log/" target="_blank") 日志管理
+        a(href="https://docs.upyun.com/cdn/service/" target="_blank") 服务管理
+        a(href="https://docs.upyun.com/cdn/config/" target="_blank") 功能配置
+        a(href="https://docs.upyun.com/cdn/rewrite/" target="_blank") 简单编程
+        a(href="https://docs.upyun.com/cdn/analysis/" target="_blank") 统计分析
+        a(href="https://docs.upyun.com/cdn/refresh/" target="_blank") 刷新预热
+        a(href="https://docs.upyun.com/cdn/log/" target="_blank") 日志管理
       .menu
         .title 常见问题
-        a(href="http://docs.upyun.com/cdn/faq/#_1" target="_blank") 缓存相关
-        a(href="http://docs.upyun.com/cdn/faq/#_5" target="_blank") 刷新相关
-        a(href="http://docs.upyun.com/cdn/faq/#_9" target="_blank") 性能相关
-        a(href="http://docs.upyun.com/cdn/faq/#_15" target="_blank") 功能相关
-        a(href="http://docs.upyun.com/cdn/faq/#_21" target="_blank") 安全相关
-        a(href="http://docs.upyun.com/cdn/faq/#_27" target="_blank") 证书相关
+        a(href="https://docs.upyun.com/cdn/faq/#_1" target="_blank") 缓存相关
+        a(href="https://docs.upyun.com/cdn/faq/#_5" target="_blank") 刷新相关
+        a(href="https://docs.upyun.com/cdn/faq/#_9" target="_blank") 性能相关
+        a(href="https://docs.upyun.com/cdn/faq/#_15" target="_blank") 功能相关
+        a(href="https://docs.upyun.com/cdn/faq/#_21" target="_blank") 安全相关
+        a(href="https://docs.upyun.com/cdn/faq/#_27" target="_blank") 证书相关
     .menus.live(v-if="selection === 'live'")
       .menu
         .title 产品介绍
-        a(href="http://docs.upyun.com/live/Introduction/#_2" target="_blank") 产品架构
-        a(href="http://docs.upyun.com/live/primary/" target="_blank") 基础配置
-        a(href="http://docs.upyun.com/live/advanced/" target="_blank") 增值服务
-        a(href="http://docs.upyun.com/live/mobile-sdk/" target="_blank") 移动端 SDK
+        a(href="https://docs.upyun.com/live/Introduction/#_2" target="_blank") 产品架构
+        a(href="https://docs.upyun.com/live/primary/" target="_blank") 基础配置
+        a(href="https://docs.upyun.com/live/advanced/" target="_blank") 增值服务
+        a(href="https://docs.upyun.com/live/mobile-sdk/" target="_blank") 移动端 SDK
       .menu
         .title 新手指南
-        a(href="http://docs.upyun.com/live/guide/" target="_blank") 快速入门
-        a(href="http://docs.upyun.com/live/guide/#_2" target="_blank") 服务创建
-        a(href="http://docs.upyun.com/live/guide/#_5" target="_blank") 推流测试
-        a(href="http://docs.upyun.com/live/guide/#_6" target="_blank") 拉流测试
+        a(href="https://docs.upyun.com/live/guide/" target="_blank") 快速入门
+        a(href="https://docs.upyun.com/live/guide/#_2" target="_blank") 服务创建
+        a(href="https://docs.upyun.com/live/guide/#_5" target="_blank") 推流测试
+        a(href="https://docs.upyun.com/live/guide/#_6" target="_blank") 拉流测试
       .menu
         .title 常见问题
         a(href="https://techs.b0.upaiyun.com/videos/cdnpage/upyunzb1.html" target="_blank") 服务创建
@@ -108,12 +108,12 @@
     .menus.uss(v-if="selection === 'uss'")
       .menu
         .title 使用概述
-        a(href="http://docs.upyun.com/api/quick_start/" target="_blank") 快速入门
-        a(href="http://docs.upyun.com/api/developer_guide/#_4" target="_blank") 数据预处理
-        a(href="http://docs.upyun.com/api/developer_guide/#_5" target="_blank") 数据迁移
-        a(href="http://docs.upyun.com/api/rest_api/" target="_blank") REST API
-        a(href="http://docs.upyun.com/api/form_api/" target="_blank") FORM API
-        a(href="http://docs.upyun.com/api/fusion_storage/" target="_blank") 融合云存储
+        a(href="https://docs.upyun.com/api/quick_start/" target="_blank") 快速入门
+        a(href="https://docs.upyun.com/api/developer_guide/#_4" target="_blank") 数据预处理
+        a(href="https://docs.upyun.com/api/developer_guide/#_5" target="_blank") 数据迁移
+        a(href="https://docs.upyun.com/api/rest_api/" target="_blank") REST API
+        a(href="https://docs.upyun.com/api/form_api/" target="_blank") FORM API
+        a(href="https://docs.upyun.com/api/fusion_storage/" target="_blank") 融合云存储
       .menu
         .title SDK
         a(href="https://github.com/upyun/ios-sdk" target="_blank") iOS SDK
@@ -124,25 +124,25 @@
         a(href="https://github.com/upyun/go-sdk" target="_blank") Go SDK
       .menu
         .title 开发者工具
-        a(href="http://docs.upyun.com/api/developer_tools/#ftpftps" target="_blank") FTP/FTPS
-        a(href="http://docs.upyun.com/api/developer_tools/#upx" target="_blank") 命令行工具
-        a(href="http://docs.upyun.com/api/developer_tools/#curl" target="_blank") cURL
+        a(href="https://docs.upyun.com/api/developer_tools/#ftpftps" target="_blank") FTP/FTPS
+        a(href="https://docs.upyun.com/api/developer_tools/#upx" target="_blank") 命令行工具
+        a(href="https://docs.upyun.com/api/developer_tools/#curl" target="_blank") cURL
       .menu
         .title 常见问题
-        a(href="http://docs.upyun.com/faq/#ftp" target="_blank") FTP/FTPS
-        a(href="http://docs.upyun.com/cloud/spider/" target="_blank") 文件拉取
-        a(href="http://docs.upyun.com/cloud/unzip/" target="_blank") 压缩解压缩
+        a(href="https://docs.upyun.com/faq/#ftp" target="_blank") FTP/FTPS
+        a(href="https://docs.upyun.com/cloud/spider/" target="_blank") 文件拉取
+        a(href="https://docs.upyun.com/cloud/unzip/" target="_blank") 压缩解压缩
         a(href="https://techs.b0.upaiyun.com/videos/cdnpage/upyun_oss.html" target="_blank") 融合云存储配置
-        a(href="http://docs.upyun.com/api/errno/" target="_blank") API 错误码表
+        a(href="https://docs.upyun.com/api/errno/" target="_blank") API 错误码表
     .menus.uss(v-if="selection === 'ups'")
       .menu
         .title 使用概述
-        a(href="http://docs.upyun.com/cloud/image/#url" target="_blank") URL 作图
-        a(href="http://docs.upyun.com/cloud/image/#thumb" target="_blank") 缩略图版本
-        a(href="http://docs.upyun.com/cloud/image/#sync_upload_process" target="_blank") 上传作图
+        a(href="https://docs.upyun.com/cloud/image/#url" target="_blank") URL 作图
+        a(href="https://docs.upyun.com/cloud/image/#thumb" target="_blank") 缩略图版本
+        a(href="https://docs.upyun.com/cloud/image/#sync_upload_process" target="_blank") 上传作图
         a(href="https://www.upyun.com/webp.html" target="_blank") WebP 开发专题
-        a(href="http://docs.upyun.com/live/mobile-sdk/#ios-sdk_1" target="_blank") iOS 播放器
-        a(href="http://docs.upyun.com/live/mobile-sdk/#sdk_1 " target="_blank") Android 播放器
+        a(href="https://docs.upyun.com/live/mobile-sdk/#ios-sdk_1" target="_blank") iOS 播放器
+        a(href="https://docs.upyun.com/live/mobile-sdk/#sdk_1 " target="_blank") Android 播放器
       .menu
         .title SDK
         a(href="https://github.com/upyun/ios-sdk" target="_blank") iOS SDK
@@ -153,48 +153,48 @@
         a(href="https://github.com/upyun/go-sdk" target="_blank") Go SDK
       .menu
         .title API
-        a(href="http://docs.upyun.com/cloud/image/" target="_blank") 图片处理
-        a(href="http://docs.upyun.com/cloud/av/" target="_blank") 异步音视频处理
+        a(href="https://docs.upyun.com/cloud/image/" target="_blank") 图片处理
+        a(href="https://docs.upyun.com/cloud/av/" target="_blank") 异步音视频处理
         a(href="https://docs.upyun.com/cloud/sync_video/" target="_blank") 同步视频处理
         a(href="https://docs.upyun.com/cloud/sync_audio/" target="_blank") 同步音频处理
-        a(href="http://docs.upyun.com/cloud/face_detect/" target="_blank") 人脸识别
-        a(href="http://docs.upyun.com/cloud/unzip/" target="_blank") 压缩解压缩
+        a(href="https://docs.upyun.com/cloud/face_detect/" target="_blank") 人脸识别
+        a(href="https://docs.upyun.com/cloud/unzip/" target="_blank") 压缩解压缩
       .menu
         .title 常见问题
-        a(href="http://docs.upyun.com/cloud/image/#webp" target="_blank") WebP 格式转换
+        a(href="https://docs.upyun.com/cloud/image/#webp" target="_blank") WebP 格式转换
         a(href="https://techs.b0.upaiyun.com/videos/cdnpage/Picture_processing.html" target="_blank") 使用缩略图版本
         a(href="https://techs.b0.upaiyun.com/videos/cdnpage/format_videos.html" target="_blank") 使用音视频处理
-        a(href="http://docs.upyun.com/api/developer_guide/" target="_blank") 文件上传
+        a(href="https://docs.upyun.com/api/developer_guide/" target="_blank") 文件上传
     .menus.uss(v-if="selection === 'certificate'")
       .menu
         .title 产品文档
-        a(href="http://docs.upyun.com/cdn/ssl/#_1" target="_blank") 产品介绍
-        a(href="http://docs.upyun.com/cdn/ssl/#_2" target="_blank") 名词解释
-        a(href="http://docs.upyun.com/cdn/ssl/#_3" target="_blank") 产品功能
-        a(href="http://docs.upyun.com/cdn/ssl/#_7" target="_blank") 产品优势
+        a(href="https://docs.upyun.com/cdn/ssl/#_1" target="_blank") 产品介绍
+        a(href="https://docs.upyun.com/cdn/ssl/#_2" target="_blank") 名词解释
+        a(href="https://docs.upyun.com/cdn/ssl/#_3" target="_blank") 产品功能
+        a(href="https://docs.upyun.com/cdn/ssl/#_7" target="_blank") 产品优势
       .menu
         .title 购买指导
-        a(href="http://docs.upyun.com/cdn/ssl/#_13" target="_blank") 购买流程
-        a(href="http://docs.upyun.com/cdn/ssl/#_15" target="_blank") 价格总览
-        a(href="http://docs.upyun.com/cdn/ssl/#_16" target="_blank") 退款服务
+        a(href="https://docs.upyun.com/cdn/ssl/#_13" target="_blank") 购买流程
+        a(href="https://docs.upyun.com/cdn/ssl/#_15" target="_blank") 价格总览
+        a(href="https://docs.upyun.com/cdn/ssl/#_16" target="_blank") 退款服务
       .menu
         .title 快速入门
-        a(href="http://docs.upyun.com/cdn/ssl/#_19" target="_blank") 付费证书申购
-        a(href="http://docs.upyun.com/cdn/ssl/#_20" target="_blank") 免费证书申购
+        a(href="https://docs.upyun.com/cdn/ssl/#_19" target="_blank") 付费证书申购
+        a(href="https://docs.upyun.com/cdn/ssl/#_20" target="_blank") 免费证书申购
       .menu
         .title 常见问题
-        a(href="http://docs.upyun.com/cdn/ssl/#_21" target="_blank") 注意事项
-        a(href="http://docs.upyun.com/cdn/ssl/#dv-ssl" target="_blank") DV SSL 证书验证
+        a(href="https://docs.upyun.com/cdn/ssl/#_21" target="_blank") 注意事项
+        a(href="https://docs.upyun.com/cdn/ssl/#dv-ssl" target="_blank") DV SSL 证书验证
     .menus.live(v-if="selection === 'sms'")
       .menu
         .title 产品文档
-        a(href="http://docs.upyun.com/sms/" target="_blank") 使用指南
+        a(href="https://docs.upyun.com/sms/" target="_blank") 使用指南
       .menu
         .title 接口文档
-        a(href="http://docs.upyun.com/sms/#5" target="_blank") API 文档
+        a(href="https://docs.upyun.com/sms/#5" target="_blank") API 文档
       .menu
         .title 注意事项
-        a(href="http://docs.upyun.com/sms/#4" target="_blank") 常见问题
+        a(href="https://docs.upyun.com/sms/#4" target="_blank") 常见问题
     .menus.short-video(v-if="selection === 'shortVideo'")
       .menu
         .title 使用概述

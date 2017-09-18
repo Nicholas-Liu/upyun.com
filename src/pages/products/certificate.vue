@@ -107,7 +107,7 @@ layout(:colors="colorSet")
       .description 又拍云 SSL 证书服务（SSL Certificates Service），提供 SSL 证书的申购、管理、部署等功能。与国际顶级 CA 机构合作，证书类型丰富，操作流程简单方便，为用户提供一站式 HTTPS 安全解决方案。
       .buttons
         up_button(:color="colorSet.mid", type="major", url="https://console.upyun.com/toolbox/createCertificate/" target="_blank") 立即申购
-        up_button(url="http://docs.upyun.com/cdn/ssl/#_15" target="_blank") 查看价格
+        up_button(url="https://docs.upyun.com/cdn/ssl/#_15" target="_blank") 查看价格
       .price 含两款免费 DV SSL 证书
       .price OV & EV SSL 证书限时优惠，低至 75 折
     .icon

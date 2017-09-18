@@ -39,7 +39,7 @@ layout(class="https-banner")
           .left
             p 又拍云联合 Symantec、GeoTrust、TrustAsia、Let’s Encrypt 推出 SSL 证书申请与管理一站式服务。
             p 无需繁杂流程，一键申请，轻松实现网站与 Web 应用的 HTTPS 加密部署。
-            a.link-ssl(href='http://docs.upyun.com/cdn/ssl/' target='_blank')
+            a.link-ssl(href='https://docs.upyun.com/cdn/ssl/' target='_blank')
           .right
             p 又拍云 CDN 在 HTTPS 协议的基础上已实现全平台支持 HTTP/2。
             p 支持将 HTTP 通过重定向，强制跳转为 HTTPS 访问。

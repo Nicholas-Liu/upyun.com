@@ -346,7 +346,7 @@
         router-link.more(to="/price_instruction") 查看更多价格说明
         router-link.to-pricing(to="/pricing") 费用计算器
       .bottom(v-if="nowSelection === 'certificate'")
-        a(href="http://docs.upyun.com/cdn/ssl/#_15" target="_blank") 查看更多价格说明
+        a(href="https://docs.upyun.com/cdn/ssl/#_15" target="_blank") 查看更多价格说明
 </template>
 
 <script>

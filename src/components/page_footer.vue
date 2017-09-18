@@ -14,10 +14,10 @@
         router-link(to="/solutions/fusionstorage") 融合云存储
       .menu
         .title 支持
-        a(href="http://docs.upyun.com/guide/" target="_blank") 新手入门
-        a(href="http://docs.upyun.com/faq/" target="_blank") 常见问题
-        a(href="http://docs.upyun.com/" target="_blank") 产品文档
-        a(href="http://docs.upyun.com/guide/#api" target="_blank") API 文档
+        a(href="https://docs.upyun.com/guide/" target="_blank") 新手入门
+        a(href="https://docs.upyun.com/faq/" target="_blank") 常见问题
+        a(href="https://docs.upyun.com/" target="_blank") 产品文档
+        a(href="https://docs.upyun.com/guide/#api" target="_blank") API 文档
         router-link(to="/terms") 服务条款
       .menu
         .title 活动
