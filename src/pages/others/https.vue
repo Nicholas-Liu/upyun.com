@@ -43,7 +43,7 @@ layout(class="https-banner")
           .right
             p 又拍云 CDN 在 HTTPS 协议的基础上已实现全平台支持 HTTP/2。
             p 支持将 HTTP 通过重定向，强制跳转为 HTTPS 访问。
-            a.link-https(href='http://docs.upyun.com/cdn/advanced/#https' target='_blank')
+            a.link-https(href='https://docs.upyun.com/cdn/config/#51-https' target='_blank')
       .footer
         p.header-tip 15 万用户的选择，更安全，更省心
 </template>

@@ -65,11 +65,11 @@
       .menu
         .title 快速入门
         a(href="http://docs.upyun.com/cdn/guide/#_1" target="_blank") 准备工作
-        a(href="http://docs.upyun.com/cdn/guide/#_6" target="_blank") 创建帐号
-        a(href="http://docs.upyun.com/cdn/guide/#_9" target="_blank") 帐号认证
-        a(href="http://docs.upyun.com/cdn/guide/#_12" target="_blank") 创建服务
-        a(href="http://docs.upyun.com/cdn/guide/#_15" target="_blank") 配置测试
-        a(href="http://docs.upyun.com/cdn/guide/#_17" target="_blank") 缓存验证
+        a(href="https://docs.upyun.com/cdn/guide/#_2" target="_blank") 账号注册
+        a(href="https://docs.upyun.com/cdn/guide/#_3" target="_blank") 帐号认证
+        a(href="https://docs.upyun.com/cdn/guide/#_4" target="_blank") 创建服务
+        a(href="https://docs.upyun.com/cdn/guide/#_5" target="_blank") 配置测试
+        a(href="https://docs.upyun.com/cdn/guide/#_6" target="_blank") 缓存验证
       .menu
         .title 使用指南
         a(href="http://docs.upyun.com/cdn/service/" target="_blank") 服务管理
